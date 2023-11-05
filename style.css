@@ -249,6 +249,9 @@ h2 {
 .card_image.disabled {
   filter: grayscale(1);
 }
+.card_image_mobile.disabled {
+  filter: grayscale(1);
+}
 
 .products_description {
   display: flex;
@@ -421,7 +424,7 @@ h2 {
 
 .issue_point {
   display: flex;
-  gap: 32px;
+  gap: 16px;
 }
 
 .street {
@@ -681,6 +684,7 @@ h2 {
   /* Тени/Итого, Выпадающие списки */
   box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.3),
     0px 2px 10px 0px rgba(0, 0, 0, 0.15);
+  height: fit-content;
 }
 
 .result {
@@ -770,6 +774,9 @@ h2 {
 .sale_card {
   margin-top: 4px;
 }
+.sale_card_mobile {
+  display: none;
+}
 
 .getter_inputs input::placeholder {
   color: var(--system-gray, #9797af);
@@ -779,6 +786,19 @@ h2 {
   font-weight: 400;
   line-height: 24px; /* 150% */
 }
+
+.inn_text {
+  color: var(--text-black, #000);
+  font-family: 'Segoe UI';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px; /* 116.667% */
+}
+.input_inn {
+  width: 100%;
+}
+
 .control__indicator {
   position: absolute;
   top: 2px;
@@ -789,7 +809,7 @@ h2 {
 }
 
 .information_mobile {
-  display: flex;
+  display: none;
   gap: 16px;
 }
 
@@ -848,6 +868,18 @@ h2 {
   position: relative;
   margin-top: 46px;
 }
+.control_panel {
+  display: none;
+}
+
+@media (max-width: 1399px) {
+  .bill {
+    width: 303px;
+  }
+  .basket {
+    width: 65%;
+  }
+}
 
 @media (max-width: 1023px) {
   .products_card {
@@ -858,17 +890,34 @@ h2 {
   .information {
     display: none;
   }
+
+  .information_mobile {
+    display: flex;
+  }
+
   .money {
     display: none;
+  }
+
+  .basket {
+    width: 100%;
   }
 
   .count {
     flex-direction: row;
     align-items: center;
     gap: 16px;
+    width: 100%;
+    justify-content: space-between;
   }
   .counter_icons {
     gap: 24px;
+  }
+
+  .count_disabled {
+    display: flex;
+    justify-content: flex-end;
+    width: 263px;
   }
 
   .products_description h1 {
@@ -877,6 +926,7 @@ h2 {
 
   .main {
     flex-direction: column;
+    padding: 16px;
   }
 
   .getter_inputs {
@@ -887,10 +937,29 @@ h2 {
     width: 100%;
   }
 
+  .bill_return_delivery_text_grey {
+    border-radius: 8px;
+    background: var(--background-smoky, #f6f6fa);
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  .info_about_receiving {
+    margin-top: 0;
+  }
+
   .header_input {
     display: none;
   }
   .icons {
+    display: none;
+  }
+
+  .street.time.mobile {
+    display: none;
+  }
+
+  .change_text.date {
     display: none;
   }
 
@@ -912,6 +981,7 @@ h2 {
 
   .main_container {
     padding-top: 0;
+    overflow: hidden;
   }
 
   .search_mobile {
@@ -927,5 +997,109 @@ h2 {
     line-height: 24px;
     font-variant: all-small-caps;
     letter-spacing: 0.52px;
+  }
+
+  .counter {
+    width: 80px;
+    padding: 9px;
+  }
+
+  .count {
+    justify-content: flex-start;
+  }
+
+  .count.mobile {
+    width: 263px;
+    justify-content: space-between;
+  }
+
+  .products_description h1 {
+    color: var(--text-black, #000);
+    font-family: 'Segoe UI';
+    width: 181px;
+    -webkit-line-clamp: 2; /* Число отображаемых строк */
+    display: -webkit-box; /* Включаем флексбоксы */
+    -webkit-box-orient: vertical; /* Вертикальная ориентация */
+    overflow: hidden; /* Обрезаем всё за пределами блока */
+    font-size: 14px;
+  }
+
+  .money_black {
+    color: var(--text-black, #000);
+    text-align: right;
+    /* Сайт/H4 */
+    font-family: 'Segoe UI';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 150% */
+  }
+
+  .issue_point {
+    flex-direction: column;
+  }
+  .issue_point.mobile {
+    gap: 0px;
+  }
+
+  .payment_method_text {
+    color: var(--text-black, #000);
+    font-family: 'Segoe UI';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.2px;
+  }
+
+  .main_delivery {
+    padding: 16px 16px 24px 16px;
+  }
+  .icon_20_mobile {
+    display: none;
+  }
+
+  .sale_card_mobile {
+    display: none;
+  }
+
+  .bill_delivery_to_point {
+    display: none;
+  }
+
+  .sale_card {
+    display: none;
+  }
+
+  .bug {
+    background-image: url(./image/control_panel_basket.svg);
+    width: 28px;
+    height: 28px;
+  }
+
+  .control_panel {
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 13px;
+    align-items: center;
+    background: var(--background-white, #fff);
+    box-shadow: 0px -0.5px 0px 0px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(2.5px);
+  }
+
+  .name_surname {
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .different_inputs {
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .getter_inputs {
+    gap: 48px;
   }
 }

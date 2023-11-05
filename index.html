@@ -216,7 +216,7 @@
               </div>
 
               <div class="main_counter">
-                <div class="count">
+                <div class="count mobile">
                   <div class="counter">
                     <p class="sign">-</p>
                     <p class="number">200</p>
@@ -333,8 +333,22 @@
                 </div>
               </div>
 
+              <div class="information_mobile">
+                <div class="card_image_mobile disabled">
+                  <input type="checkbox" />
+                  <div class="size_mobile">56</div>
+                </div>
+
+                <div class="products_description disabled">
+                  <h1>Футболка UZcotton мужская</h1>
+
+                  <div class="color_and_size">
+                    <h2>Цвет: белый</h2>
+                  </div>
+                </div>
+              </div>
               <div class="main_counter">
-                <div class="count">
+                <div class="count_disabled">
                   <div class="counter_icons">
                     <img src="./image/heart.svg" />
                     <img src="./image/little_basket.svg" />
@@ -364,8 +378,26 @@
                 </div>
               </div>
 
+              <div class="information_mobile">
+                <div class="card_image disabled">
+                  <img src="./image/Frame 277132129.svg" alt="" />
+                </div>
+
+                <div class="products_description disabled">
+                  <h1>
+                    Силиконовый чехол картхолдер (отверстия) для карт,
+                    прозрачный кейс бампер на Apple iPhone XR, MobiSafe
+                  </h1>
+
+                  <div class="color_and_size">
+                    <h2>Цвет: прозрачный</h2>
+                    <!-- <h2>Размер: 56</h2> -->
+                  </div>
+                </div>
+              </div>
+
               <div class="main_counter">
-                <div class="count">
+                <div class="count_disabled">
                   <div class="counter_icons">
                     <img src="./image/heart.svg" />
                     <img src="./image/little_basket.svg" />
@@ -395,8 +427,26 @@
                 </div>
               </div>
 
+              <div class="information_mobile">
+                <div class="card_image disabled">
+                  <img src="./image/Frame 277132129 (1).svg" alt="" />
+                </div>
+
+                <div class="products_description disabled">
+                  <h1>
+                    Карандаши цветные Faber-Castell "Замок", набор 24 цвета,
+                    заточенные, шестигранные,Faber-Castell
+                  </h1>
+
+                  <div class="color_and_size">
+                    <!-- <h2>Цвет: белый</h2>
+                    <h2>Размер: 56</h2> -->
+                  </div>
+                </div>
+              </div>
+
               <div class="main_counter">
-                <div class="count">
+                <div class="count_disabled">
                   <div class="counter_icons">
                     <img src="./image/heart.svg" />
                     <img src="./image/little_basket.svg" />
@@ -416,7 +466,7 @@
             </div>
 
             <div class="delivery_info">
-              <div class="issue_point">
+              <div class="issue_point mobile">
                 <p class="chosen weight delivery">Пункт выдачи</p>
 
                 <div class="issue_point_description">
@@ -433,7 +483,7 @@
                 </div>
               </div>
 
-              <div class="issue_point">
+              <div class="issue_point mobile">
                 <p class="chosen weight delivery">Стоимость доставки</p>
                 <p class="street">Бесплатно</p>
               </div>
@@ -465,9 +515,11 @@
             <div class="return_delivery">
               <img src="./image/check mark.svg" class="check_mark" />
               <div class="return_delivery_text">
-                Обратная доставка товаров на склад при отказе —
+                <p>
+                  Обратная доставка товаров на склад при отказе —
+                  <span class="for_free">бесплатно</span>
+                </p>
               </div>
-              <p class="for_free">бесплатно</p>
             </div>
           </div>
 
@@ -513,12 +565,15 @@
                   placeholder="Телефон"
                   class="input_getter"
                 />
-                <input
-                  id="inn"
-                  type="text"
-                  placeholder="ИНН"
-                  class="input_getter"
-                />
+                <div class="input_inn">
+                  <input
+                    id="inn"
+                    type="text"
+                    placeholder="ИНН"
+                    class="input_getter"
+                  />
+                  <p class="inn_text">Для таможенного оформления</p>
+                </div>
               </div>
             </div>
           </div>
@@ -544,25 +599,31 @@
           </div>
           <div class="bill_delivery_to_point">
             <p class="money_black">Доставка в пункт выдачи</p>
-            <img src="./image/icon-20.svg" />
+            <img src="./image/icon-20.svg" class="icon_20_mobile" />
           </div>
-          <p class="street time">Бишкек, улица Ахматбека Суюмбаева, 12/1</p>
+          <p class="street time mobile">
+            Бишкек, улица Ахматбека Суюмбаева, 12/1
+          </p>
           <p class="change_text date">5–8 фев</p>
 
           <div class="bill_return_delivery_text_grey">
-            <img src="./image/check mark.svg" class="check_mark" />
+            <img src="./image/check_mark_mobile.svg" class="check_mark" />
 
             <div class="return_delivery_text">
-              <p>Обратная доставка товаров на склад при отказе —</p>
-
-              <p class="for_free check">бесплатно</p>
+              <p>
+                Обратная доставка товаров на склад при отказе —<span
+                  class="for_free check"
+                  >бесплатно</span
+                >
+              </p>
             </div>
           </div>
           <div class="bill_delivery_to_point">
             <p class="money_black">Оплата картой</p>
-            <img src="./image/icon-20.svg" />
+            <img src="./image/icon-20.svg" class="icon_20_mobile" />
           </div>
           <img src="./image/Оплата.svg" class="sale_card" />
+          <img src="./image/Frame 995_mobile.svg" class="sale_card_mobile" />
 
           <div class="info_about_receiving">
             <div class="payment_immediately">
@@ -590,6 +651,15 @@
       <footer class="footer">
         <p class="footer_title">© 2022 ООО «Товары и точка»</p>
       </footer>
+      <div class="control_panel">
+        <img src="./image/house.svg" />
+        <img src="./image/control_panel_search.svg" />
+        <div class="bug">
+          <div class="number_on_pic">3</div>
+        </div>
+        <img src="./image/control_panel_heart.svg" />
+        <img src="./image/control_panel_people.svg" />
+      </div>
     </div>
   </body>
 </html>
