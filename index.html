@@ -8,6 +8,51 @@
     <script src="index.js" defer></script>
   </head>
   <body>
+    <div class="main_pop_up_payment_method">
+      <div class="pop_up_payment_method_head">
+        <p class="pop_up_payment_method_head_text">Способ оплаты</p>
+        <img src="./image/search_close.svg" id="closeButton" />
+      </div>
+
+      <div class="pop_up_payment_method_body">
+        <div class="pop_up_payment_method_list_maps">
+          <div class="pop_up_payment_method_card_mir">
+            <input type="radio" />
+            <img
+              src="./image/card_mir.svg"
+              class="pop_up_payment_method_card_settings"
+            />
+          </div>
+          <div class="pop_up_payment_method_card_visa">
+            <input type="radio" />
+            <img
+              src="./image/card_visa.svg"
+              class="pop_up_payment_method_card_settings"
+            />
+          </div>
+          <div class="pop_up_payment_method_card_master">
+            <input type="radio" />
+            <img
+              src="./image/card_master.svg"
+              class="pop_up_payment_method_card_settings"
+            />
+          </div>
+          <div class="pop_up_payment_method_card_maestro">
+            <input type="radio" />
+            <img
+              src="./image/card_maestro.svg"
+              class="pop_up_payment_method_card_settings"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="pop_up_payment_method_footer">
+        <div class="pop_up_payment_method_footer_div_vs_button">
+          <button class="pop_up_payment_method_button">Выбрать</button>
+        </div>
+      </div>
+    </div>
+
     <div class="main_container">
       <header>
         <div class="goods">
@@ -527,7 +572,9 @@
             <div class="payment_method_and_change">
               <div class="payment_method_text">Способ оплаты</div>
 
-              <div class="change_text">Изменить</div>
+              <div class="change_text" id="open_pop_up_payment_method">
+                Изменить
+              </div>
             </div>
 
             <div class="card_info"><img src="./image/cardinfo.svg" /></div>
@@ -620,7 +667,11 @@
           </div>
           <div class="bill_delivery_to_point">
             <p class="money_black">Оплата картой</p>
-            <img src="./image/icon-20.svg" class="icon_20_mobile" />
+            <img
+              src="./image/icon-20.svg"
+              class="icon_20_mobile"
+              id="open_pop_up_payment_method"
+            />
           </div>
           <img src="./image/Оплата.svg" class="sale_card" />
           <img src="./image/Frame 995_mobile.svg" class="sale_card_mobile" />

@@ -9,6 +9,69 @@
   box-sizing: border-box;
 }
 
+.main_pop_up_payment_method {
+  border-radius: 16px;
+  background: var(--background-white, #fff);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2);
+  display: flex;
+  width: 400px;
+  flex-direction: column;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+.pop_up_payment_method_head {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 24px 13px 24px;
+}
+.pop_up_payment_method_head_text {
+  color: var(--text-black, #000);
+  font-family: 'Segoe UI';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px; /* 140% */
+  letter-spacing: -0.2px;
+}
+.pop_up_payment_method_body {
+  padding: 0px 22px 123px 22px;
+}
+.pop_up_payment_method_card_settings {
+  margin-left: 8px;
+}
+
+.pop_up_payment_method_list_maps {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  /* padding: 0px 22px 123px 22px; */
+}
+
+.pop_up_payment_method_footer {
+  padding: 16px 24px 24px 24px;
+}
+
+.pop_up_payment_method_button {
+  border-radius: 8px;
+  background: var(--system-magenta, #cb11ab);
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.08);
+  width: 164px;
+  height: 44px;
+  color: var(--system-white, #fff);
+  text-align: center;
+  font-family: 'Segoe UI';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+  border: none;
+}
+
 .main_container {
   background-color: #6725a8;
   /* height: 100vh; vh значение которое равно окну браузера */
@@ -882,6 +945,28 @@ h2 {
 }
 
 @media (max-width: 1023px) {
+  .main_pop_up_payment_method {
+    width: 320px;
+    height: 594px;
+  }
+
+  .pop_up_payment_method_head {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 24px 13px 16px;
+  }
+  .pop_up_payment_method_body {
+    padding: 0px 16px;
+  }
+  .pop_up_payment_method_button {
+    width: 288px;
+    height: 44px;
+  }
+  .pop_up_payment_method_footer {
+    padding: 16px;
+  }
+
   .products_card {
     flex-direction: column;
     gap: 12px;
