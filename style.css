@@ -64,6 +64,11 @@ header {
   font-variant: all-small-caps;
   letter-spacing: 0.56px;
 }
+
+.search_mobile {
+  display: none;
+}
+
 .header_input {
   display: block;
   width: 100%;
@@ -164,6 +169,7 @@ header {
   display: flex;
   flex-direction: column;
   flex: 1;
+  width: 100%;
 }
 
 .chosen {
@@ -642,7 +648,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
-  width: 700px;
+  width: 600px;
 }
 .input_getter {
   border-top: none;
@@ -780,4 +786,146 @@ h2 {
   height: 20px;
   width: 20px;
   background-color: #6725a8;
+}
+
+.information_mobile {
+  display: flex;
+  gap: 16px;
+}
+
+.money_mobile {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.card_image_mobile {
+  background-image: url(./image/Frame\ 3853.svg);
+  width: 80px;
+  height: 106px;
+  background-repeat: no-repeat;
+  position: relative;
+  display: block;
+  padding: 4px;
+}
+
+.card_image_mobile_case {
+  background-image: url(./image/Frame\ 277132129.svg);
+  width: 80px;
+  height: 106px;
+  background-repeat: no-repeat;
+  position: relative;
+  display: block;
+  padding: 4px;
+}
+.card_image_mobile_pencil {
+  background-image: url(./image/Frame\ pensils.svg);
+  width: 80px;
+  height: 106px;
+  background-repeat: no-repeat;
+  position: relative;
+  display: block;
+  padding: 4px;
+}
+
+.size_mobile {
+  display: flex;
+  width: 22px;
+  height: 22px;
+  padding: 0px 4px 3px 4px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background: var(--light-system-white, #fff);
+  color: var(--light-system-text, #000);
+  text-align: center;
+
+  font-family: 'Segoe UI';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  position: relative;
+  margin-top: 46px;
+}
+
+@media (max-width: 1023px) {
+  .products_card {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .information {
+    display: none;
+  }
+  .money {
+    display: none;
+  }
+
+  .count {
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+  }
+  .counter_icons {
+    gap: 24px;
+  }
+
+  .products_description h1 {
+    width: fit-content;
+  }
+
+  .main {
+    flex-direction: column;
+  }
+
+  .getter_inputs {
+    width: 100%;
+  }
+
+  .bill {
+    width: 100%;
+  }
+
+  .header_input {
+    display: none;
+  }
+  .icons {
+    display: none;
+  }
+
+  .burger {
+    border: none;
+    background-image: url(./image/burgermobile.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .burger_icon {
+    display: none;
+  }
+
+  header {
+    padding: 0px 13px;
+    height: 56px;
+  }
+
+  .main_container {
+    padding-top: 0;
+  }
+
+  .search_mobile {
+    display: block;
+  }
+
+  .goods p {
+    color: var(--system-white, #fff);
+    font-family: 'Segoe UI';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    font-variant: all-small-caps;
+    letter-spacing: 0.52px;
+  }
 }
